@@ -46,7 +46,11 @@
               <jvmArgs>
                 <jvmArg>-Xss100M</jvmArg>
                 <jvmArg>-Djava.io.tmpdir=/apps/jenkins/2.204.1/workspace/Gatling/tmp</jvmArg>
+                <jvmArg>-Djna.tmpdir=/apps/jenkins/2.204.1/workspace/Gatling/tmp</jvmArg>
               </jvmArgs>
+              <compilerJvmArgs>
+                       <compilerJvmArg>-Djna.tmpdir=/apps/jenkins/2.204.1/workspace/Gatling/tmp</compilerJvmArg> 
+              </compilerJvmArgs>
               <args>
                 <arg>-target:jvm-1.8</arg>
                 <arg>-deprecation</arg>
